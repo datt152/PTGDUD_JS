@@ -77,15 +77,26 @@ avgKoalas = calcAverage(koalasScore[1]);
 console.log(`Data 2:`);
 
 if(checkWinner(avgDolphins,avgKoalas) == 1) {
-    console.log(`Data 1: Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
+    console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
     
 }
 else if(checkWinner(avgDolphins,avgKoalas) == 0) {
-    console.log(`Data 1: Koalas win (${avgKoalas} vs. ${avgDolphins})`);
+    console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
 
 }
-else console.log("Data 1: No one win");
-
-
-
-
+else console.log("No one win");
+console.log("Coding Challenge #2");
+function calcTip(input) {
+    return input >= 50 && input <= 300 ? input * 0.15 : input * 0.2; 
+}
+var bills = [125, 555, 44]
+var tips = [];
+var totals = [];
+bill = 100.0;
+tip = calcTip(bill);
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${tip + bill}`);
+for (let index = 0; index < bills.length; index++) {
+    tips[index] = calcTip(bills[index]);
+    totals[index] = tips[index] + bills[index];
+    console.log(`Data ${index + 1}: The bill was ${bills[index]}, the tip was ${tips[index]}, and the total value ${totals[index]}`);
+}
