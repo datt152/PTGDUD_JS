@@ -1,0 +1,16 @@
+var massOfMark = 78;
+var heightOfMark = 1.69;
+var massOfJohn = 92;
+var heightOfJohn = 1.95;
+var BMIOfMark = massOfMark/(heightOfMark**2);
+var BMIOfJohn = massOfJohn/(heightOfJohn**2);
+console.log("Data 1: Mark's BMI: ", BMIOfMark);
+console.log("Data 2: John's BMI: ", BMIOfJohn);
+massOfMark = 95;
+heightOfMark = 1.88;
+massOfJohn = 85;
+heightOfJohn = 1.76;
+BMIOfMark = massOfMark/(heightOfMark**2);
+BMIOfJohn = massOfJohn/(heightOfJohn**2);
+console.log("Data 1: Mark's BMI: ", BMIOfMark);
+console.log("Data 2: John's BMI: ", BMIOfJohn);
