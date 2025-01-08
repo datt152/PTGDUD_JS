@@ -147,4 +147,22 @@ console.log('Bills:', bills)
 console.log('Tips:', tips);
 console.log('Totals:', totals);
 console.log('Average Total:', calcAverage(totals));
+
+ console.log("Developer Skills & Editor Setup");
+
+ console.log("Coding Challenge #1");
+ function printForcast(arr) {
+    var s = ``;
+    for (let index = 0; index < arr.length; index++) {
+        s += `${arr[index]}°C in ${index + 1} days ...`;
+    }
+    console.log("... " + s);
     
+ }
+ var arr = [[17, 21, 23],[12, 5, -5, 0, 4]]
+ console.log("Data 1:");
+ printForcast(arr[0]);
+ console.log("Data 2:");
+ printForcast(arr[1]);
+ 
+ 
