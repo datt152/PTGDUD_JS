@@ -132,3 +132,19 @@ if (rs === 1) {
     console.log(`John's BMI (${johnBMI}) is higher than Mark's (${markBMI})`);
 } else 
     console.log(`Mark and John have the same BMI (${markBMI})`);
+     
+console.log("Coding Challenge #4");
+bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
+tips = [];
+totals = [];
+
+for (let index = 0; index < bills.length; index++) {
+    const tip = calcTip(bills[index]);
+    tips.push(tip);
+    totals.push(tip + bills[index]);
+}
+console.log('Bills:', bills)
+console.log('Tips:', tips);
+console.log('Totals:', totals);
+console.log('Average Total:', calcAverage(totals));
+    
