@@ -100,3 +100,35 @@ for (let index = 0; index < bills.length; index++) {
     totals[index] = tips[index] + bills[index];
     console.log(`Data ${index + 1}: The bill was ${bills[index]}, the tip was ${tips[index]}, and the total value ${totals[index]}`);
 }
+console.log("Coding Challenge #3");
+
+const person = {
+    fullName: "",
+    mass: 0,
+    height: 0,
+    calcBMI: function() {
+        return this.mass / (this.height * this.height);
+    }
+};
+const markInfo = Object.create(person);
+markInfo.fullName = "Mark Miller";
+markInfo.mass = 78;
+markInfo.height = 1.69;
+
+const johnInfo = Object.create(person);
+johnInfo.fullName = "John Smith";
+johnInfo.mass = 92;
+johnInfo.height = 1.95;
+
+const markBMI = markInfo.calcBMI();
+const johnBMI = johnInfo.calcBMI();
+
+
+let rs = markBMI > johnBMI ? 1 : (markBMI < johnBMI ? -1 : 0);
+
+if (rs === 1) {
+    console.log(`Mark's BMI (${markBMI}) is higher than John's (${johnBMI})`);
+} else if (rs === -1) {
+    console.log(`John's BMI (${johnBMI}) is higher than Mark's (${markBMI})`);
+} else 
+    console.log(`Mark and John have the same BMI (${markBMI})`);
